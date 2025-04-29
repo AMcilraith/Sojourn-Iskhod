@@ -14,7 +14,7 @@ datum/preferences
 	var/list/body_markings = list()
 
 	//Twiddly Bits
-	var/blood_color = "#A10808"
+	//var/blood_color = "#A10808"
 
 /datum/category_item/player_setup_item/physical/furry
 	name = "Furry"
@@ -30,7 +30,7 @@ datum/preferences
 
 	from_file(S["body_markings"], pref.body_markings)
 
-	from_file(S["blood_color"], pref.blood_color)
+	//from_file(S["blood_color"], pref.blood_color)
 
 /datum/category_item/player_setup_item/physical/furry/save_character(var/savefile/S)
 	to_file(S["ears_style"], pref.ears_style)
@@ -42,7 +42,7 @@ datum/preferences
 
 	to_file(S["body_markings"], pref.body_markings)
 
-	to_file(S["blood_color"], pref.blood_color)
+	//to_file(S["blood_color"], pref.blood_color)
 
 
 /datum/category_item/player_setup_item/physical/furry/sanitize_character()
@@ -68,7 +68,7 @@ datum/preferences
 		for(counter = 1, counter <= GLOB.wings_styles_list[pref.wings_style]?:colored_layers, counter++)
 			if(counter > pref.wings_colors.len) pref.wings_colors.Add(counter ? (counter == 1 ? "#000000" : "#777777") : "#ffffff")
 			else if(!iscolor(pref.wings_colors[counter])) pref.wings_colors[counter] = counter ? (counter == 1 ? "#000000" : "#777777") : "#ffffff"
-	pref.blood_color = iscolor(pref.blood_color) ? pref.blood_color : initial(pref.blood_color)
+	//pref.blood_color = iscolor(pref.blood_color) ? pref.blood_color : initial(pref.blood_color)
 
 	if(!istype(pref.body_markings)) pref.body_markings = list()
 	for(var/item in pref.body_markings)
@@ -83,9 +83,9 @@ datum/preferences
 /datum/category_item/player_setup_item/physical/furry/content(var/mob/user)
 	. += "<style>span.color_holder_box{display: inline-block; width: 20px; height: 8px; border:1px solid #000; padding: 0px;}</style>"
 
-	. += "<b>Blood Color:</b> <a href='?src=\ref[src];blood_color=1'><span class='color_holder_box' style='background-color:[pref.blood_color]'></span></a>"
-	. += "<a href='?src=\ref[src];blood_reset=1'>&#707;</a>"
-	. += "<br>"
+	//. += "<b>Blood Color:</b> <a href='?src=\ref[src];blood_color=1'><span class='color_holder_box' style='background-color:[pref.blood_color]'></span></a>"
+	//. += "<a href='?src=\ref[src];blood_reset=1'>&#707;</a>"
+	//. += "<br>"
 	var/counter
 	. += "<b>Ears:</b><br>"
 	. += "Type: <a href='?src=\ref[src];ears_type=1'>[pref.ears_style]</a><br>"
@@ -117,15 +117,15 @@ datum/preferences
 	pref.categoriesChanged = "Furry"
 	var/datum/species/cspecies = global.all_species[pref.species]
 	var/datum/species_form/cform = GLOB.all_species_form_list[pref.species_form]
-	if(href_list["blood_color"])
-		var/color = input(user, "Choose your character's blood color:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.blood_color) as color|null
-		if(color && CanUseTopic(user))
-			pref.blood_color = color
-		return TOPIC_REFRESH_UPDATE_PREVIEW
-	if(href_list["blood_reset"])
-		if(CanUseTopic(user))
-			pref.blood_color = (cform && cform.blood_color) ? cform.blood_color : "A10808"
-		return TOPIC_REFRESH_UPDATE_PREVIEW
+	//if(href_list["blood_color"])
+	//	var/color = input(user, "Choose your character's blood color:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.blood_color) as color|null
+	//	if(color && CanUseTopic(user))
+	//		pref.blood_color = color
+	//	return TOPIC_REFRESH_UPDATE_PREVIEW
+	//if(href_list["blood_reset"])
+	//	if(CanUseTopic(user))
+	//		pref.blood_color = (cform && cform.blood_color) ? cform.blood_color : "A10808"
+	//	return TOPIC_REFRESH_UPDATE_PREVIEW
 	if(href_list["ears_type"])
 		var/valid_ears = cspecies.permitted_ears ? cspecies.permitted_ears : GLOB.ears_styles_list
 		var/new_e_style = input(user, "Choose your character's ears:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.ears_style)   as null|anything in (list("Default" = null) + valid_ears)

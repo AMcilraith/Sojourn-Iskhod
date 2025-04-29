@@ -67,7 +67,7 @@
 
 	sanitize_preferences()
 	if(client)
-		// Can't find anything else that modifies a client var like this, there 
+		// Can't find anything else that modifies a client var like this, there
 		// seems to be no better way to do it than this special exception
 		client.apply_fps(clientfps)
 		if(istype(client.mob, /mob/new_player))
@@ -246,7 +246,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 			if ("Furry",)
 				categoriesChanged=null
-				character.blood_color = blood_color //6
+				//character.blood_color = blood_color //6
 				character.ears = GLOB.ears_styles_list[ears_style] //6
 				character.ears_colors = ears_colors
 				character.tail = GLOB.tail_styles_list[tail_style] //6
@@ -317,7 +317,7 @@
 	character.backpack_setup = new(backpack, backpack_metadata["[backpack]"]) //4
 
 
-	character.blood_color = blood_color //6
+	//character.blood_color = blood_color //6
 	character.ears = GLOB.ears_styles_list[ears_style] //6
 	character.ears_colors = ears_colors
 	character.tail = GLOB.tail_styles_list[tail_style] //6

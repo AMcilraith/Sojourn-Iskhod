@@ -13,7 +13,7 @@
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	min_age = 18
 	max_age = 110
-
+	blood_color = "#A10808"
 	dark_color = "#ffffff"
 	light_color = "#000000"
 
@@ -53,7 +53,7 @@
 	max_age = 200 //Effectively ageless, but human history is only so long.
 	hunger_factor = DEFAULT_HUNGER_FACTOR * 1.1
 	nutrition_mod = 100
-
+	blood_color = "#A10808"
 	dark_color = "#ffffff"
 	light_color = "#000000"
 
@@ -116,7 +116,7 @@
 	southlanders prefer hot dry deserts and speak with Japanese influences. Both groups are stocky, strong, and thickly built and few have the lithe feline qualities \
 	one would expect."
 	taste_sensitivity = TASTE_SENSITIVE                 // How sensitive the species is to minute tastes.
-
+	blood_color = "#A10808"
 	dark_color = "#00ff00"
 	light_color = "#008000"
 
@@ -191,7 +191,7 @@
 	blurb = "no."
 	hunger_factor = 0.5
 	taste_sensitivity = TASTE_HYPERSENSITIVE
-
+	blood_color = "#597DE8"
 	dark_color = "#afeeee"
 	light_color = "#20b2aa"
 
@@ -255,7 +255,7 @@
 	radiation_mod = 0.5
 	total_health = 150
 	siemens_coefficient = 2
-
+	blood_color = "#A10808"
 	dark_color = "#ff0000"
 	light_color = "#990000"
 
@@ -326,7 +326,7 @@
 		"Your chilly flesh stands out in goosebumps."
 		)
 	spawn_flags = CAN_JOIN
-
+	blood_color = "#A10808"
 	dark_color = "#0000ff"
 	light_color = "#0000ff"
 
@@ -366,7 +366,7 @@
 		STAT_VIG = -10,
 		STAT_COG = -10
 	)
-
+	blood_color = "#A10808"
 	dark_color = "#ffff00"
 	light_color = "#ffff00"
 
@@ -402,7 +402,7 @@
 		STAT_MEC = 5,
 		STAT_COG = 5
 	)
-
+	blood_color = "#D7AE0E"
 	dark_color = "#dddddd"
 	light_color = "#dddddd"
 	darksight = 2
@@ -447,7 +447,7 @@
 		STAT_BIO = 5,
 		STAT_COG = 5
 	)
-
+	blood_color = "#339966"
 	dark_color = "#5ac18e"
 	light_color = "#5ac18e"
 
@@ -550,7 +550,7 @@
 		"You feel uncomfortably warm.",
 		"Your overheated scales itch."
 		)
-
+	blood_color = "#e0751e"
 	dark_color = "#660066"
 	light_color = "#660066"
 
@@ -616,7 +616,7 @@
 	flags = NO_PAIN | IS_PLANT
 	taste_sensitivity = TASTE_NUMB
 	darksight = 4
-
+	blood_color = "#656b5d"
 	dark_color = "#93eb9e"
 	light_color = "#93eb9e"
 
@@ -668,7 +668,7 @@
 	burn_mod = 2						// Burn damage multiplier.
 	light_dam = 1 // Same threshold as the Nightcrawler perk
 	taste_sensitivity = TASTE_NUMB
-
+	blood_color = "#656b5d"
 	dark_color = "#49754f"
 	light_color = "#49754f"
 
@@ -716,7 +716,7 @@
 	breath_type = null
 	poison_type = null
 	darksight = 2
-
+	blood_color = "#030303"
 	has_limbs = list(
 		BP_CHEST =  new /datum/organ_description/chest/full_body_prosthetic,
 		BP_GROIN =  new /datum/organ_description/groin/full_body_prosthetic,
@@ -767,7 +767,7 @@
 	breath_type = null
 	poison_type = null
 	darksight = 2
-
+	blood_color = "#030303"
 	has_limbs = list(
 		BP_CHEST =  new /datum/organ_description/chest/unbranded,
 		BP_GROIN =  new /datum/organ_description/groin/unbranded,
@@ -823,7 +823,7 @@
 	breath_type = null
 	poison_type = null
 	darksight = 2
-
+	blood_color = "#030303"
 	dark_color = "#ffffff"
 	light_color = "#000000"
 
@@ -887,7 +887,7 @@
 	poison_type = null
 	total_health = 75
 	darksight = 2
-
+	blood_color = "#030303"
 	dark_color = "#FA8128"
 	light_color = "#FCAE1E"
 
@@ -948,6 +948,7 @@
 	breath_type = null
 	poison_type = null
 	total_health = 75
+	blood_color = "#030303"
 	dark_color = "#FFFFFF"
 	light_color = "#000000"
 	darksight = 2
@@ -1010,7 +1011,7 @@
 	poison_type = null
 	total_health = 75
 	darksight = 2
-
+	blood_color = "#030303"
 	dark_color = "#FFFFFF"
 	light_color = "#000000"
 
@@ -1071,7 +1072,7 @@
 	breath_type = null
 	poison_type = null
 	darksight = 3
-
+	blood_color = "#030303"
 	dark_color = "#FFFFFF"
 	light_color = "#000000"
 
@@ -1111,7 +1112,7 @@
 /datum/species/slime
 	name = SPECIES_SLIME
 	name_plural = "Aulvae"
-
+	blood_color = "#b8b8b8"
 	default_form = FORM_SLIME
 	obligate_form = TRUE
 	reagent_tag = IS_SLIME
