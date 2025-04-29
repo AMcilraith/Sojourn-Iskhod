@@ -116,7 +116,7 @@ datum/preferences
 /datum/category_item/player_setup_item/physical/furry/OnTopic(var/href,var/list/href_list, var/mob/user)
 	pref.categoriesChanged = "Furry"
 	var/datum/species/cspecies = global.all_species[pref.species]
-	var/datum/species_form/cform = GLOB.all_species_form_list[pref.species_form]
+	//var/datum/species_form/cform = GLOB.all_species_form_list[pref.species_form]
 	//if(href_list["blood_color"])
 	//	var/color = input(user, "Choose your character's blood color:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.blood_color) as color|null
 	//	if(color && CanUseTopic(user))

@@ -1,5 +1,6 @@
 /datum/species_form/human
 	name = FORM_HUMAN
+	blood_color = "#A10808"
 //	name_plural = "Humans"
 	base = 'icons/mob/human_races/r_human_white.dmi'
 	deform = 'icons/mob/human_races/r_def_human_white.dmi'
@@ -32,6 +33,7 @@
 	blood_mask*/
 /datum/species_form/exalt
 	name = FORM_EXALT_HUMAN
+	blood_color = "#A10808"
 	base = 'icons/mob/human_races/r_human_white.dmi'
 	deform = 'icons/mob/human_races/r_def_human_white.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_COLOR | DEFAULT_APPEARANCE_FLAGS
@@ -151,6 +153,7 @@
 /datum/species_form/sablekyne
 	playable = FALSE
 	name = FORM_SABLEKYNE
+	blood_color = "#A10808"
 	base = 'icons/mob/human_races/r_sablekyne_white.dmi'
 	deform = 'icons/mob/human_races/r_def_sablekyne_white.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -158,6 +161,7 @@
 /datum/species_form/marqua
 	playable = FALSE
 	name = FORM_MARQUA
+	blood_color = "#597DE8"
 	base = 'icons/mob/human_races/r_marqua_vr.dmi'
 	deform = 'icons/mob/human_races/r_def_marqua.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -165,6 +169,7 @@
 /datum/species_form/kriosan
 	playable = FALSE
 	name = FORM_KRIOSAN
+	blood_color = "#A10808"
 	base = 'icons/mob/human_races/r_vulpkanin.dmi'
 	deform = null	//TODO: White vulp deformed sprites. There aren't even regular ones here.
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -172,6 +177,7 @@
 /datum/species_form/akula
 	playable = FALSE
 	name = FORM_AKULA
+	blood_color = "#A10808"
 	base = 'icons/mob/human_races/r_akula.dmi'
 	deform = 'icons/mob/human_races/r_def_akula.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -179,6 +185,7 @@
 /datum/species_form/naramad
 	playable = FALSE
 	name = FORM_NARAMAD
+	blood_color = "#A10808"
 	base = 'icons/mob/human_races/r_sergal.dmi'
 	deform = 'icons/mob/human_races/r_def_sergal.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -186,6 +193,7 @@
 /datum/species_form/chtmant
 	playable = FALSE
 	name = FORM_CHTMANT
+	blood_color = "#339966"
 	base = 'icons/mob/human_races/r_spider.dmi'
 	deform = 'icons/mob/human_races/r_def_spider.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -193,6 +201,7 @@
 /datum/species_form/cindarite
 	playable = FALSE
 	name = FORM_CINDAR
+	blood_color = "#e0751e"
 	base = 'icons/mob/human_races/r_lizard_white.dmi'
 	deform = 'icons/mob/human_races/r_def_lizard_white.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -200,6 +209,7 @@
 /datum/species_form/sojvox
 	playable = FALSE
 	name = FORM_OPIFEX
+	blood_color = "#D7AE0E"
 	base = 'icons/mob/human_races/r_nevrean.dmi'
 	deform = 'icons/mob/human_races/r_def_nevrean.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
@@ -286,6 +296,7 @@
 /datum/species_form/folken
 	playable = FALSE
 	name = FORM_FOLKEN
+	blood_color = "#656b5d"
 	base = 'icons/mob/human_races/r_folken.dmi'
 	deform = null
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_COLOR | DEFAULT_APPEARANCE_FLAGS
@@ -293,6 +304,7 @@
 /datum/species_form/mycus
 	playable = FALSE
 	name = FORM_MYCUS
+	blood_color = "#656b5d"
 	base = 'icons/mob/human_races/r_mycus.dmi'
 	deform = null
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | DEFAULT_APPEARANCE_FLAGS
