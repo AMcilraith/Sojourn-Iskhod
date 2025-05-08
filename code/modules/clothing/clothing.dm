@@ -745,7 +745,7 @@ BLIND     // can't see anything
 		to_chat(usr, "The controls are locked.")
 		return 0
 	if(has_sensor <= 0)
-		to_chat(usr, "This suit does not have any sensors..")
+		to_chat(usr, "This suit does not have any sensors.")
 		return 0
 
 	var/list/modes = list("Off", "Binary sensors", "Vitals tracker", "Tracking beacon")
@@ -781,7 +781,7 @@ BLIND     // can't see anything
 				for(var/mob/V in viewers(usr, 1))
 					V.show_message("[usr] sets [src.loc]'s sensors to maximum.", 1)
 
-/obj/item/clothing/under/verb/toggle()
+/obj/item/clothing/under/verb/set_sensors()
 	set name = "Toggle Suit Sensors"
 	set category = "Object"
 	set src in usr
