@@ -739,7 +739,7 @@ BLIND     // can't see anything
 			to_chat(user, "Its vital tracker and tracking beacon appear to be enabled.")
 
 /obj/item/clothing/under/proc/set_sensors(var/mob/M)
-	if (istype(M, /mob/dead/)) return
+	if (istype(M, /mob/dead)) return
 	if (usr.stat || usr.restrained()) return
 	if(has_sensor >= 2)
 		to_chat(usr, "The controls are locked.")

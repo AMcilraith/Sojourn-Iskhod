@@ -30,10 +30,10 @@
 				if(suit.has_sensor >= 2)
 					to_chat(usr, "The controls are locked.")
 				else
-				admin_attack_log(user, src,"<font color='orange'>Has had their sensors toggled by [user] </font>")
-				admin_attack_log(user, src,"<font color='red'>Attempted to toggle [src]'s sensors</font>")
-				var/obj/item/clothing/under/suit = src.w_uniform
-				visible_message(SPAN_DANGER("\The [usr] is trying to set \the [src]'s suit sensors!"))
+					admin_attack_log(user, src,"<font color='orange'>Has had their sensors toggled by [user] </font>")
+					admin_attack_log(user, src,"<font color='red'>Attempted to toggle [src]'s sensors</font>")
+					var/obj/item/clothing/under/suit = src.w_uniform
+					visible_message(SPAN_DANGER("\The [usr] is trying to set \the [src]'s suit sensors!"))
 					set_sensors(user)
 		if("internals")
 			visible_message(SPAN_DANGER("\The [usr] is trying to set \the [src]'s internals!"))
